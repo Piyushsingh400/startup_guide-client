@@ -10,7 +10,7 @@ export const LogoutView = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:4000/api/user").then((res) => {
+    axios.get("https://startup-guide-server.onrender.com/api/user").then((res) => {
       setData(res.data.reverse());
     });
   }, []);

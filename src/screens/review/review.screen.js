@@ -11,7 +11,7 @@ export const Review = () => {
 
   React.useEffect(() => {
     axios
-      .get('http://localhost:4000/api/user/' + params.id)
+      .get('https://startup-guide-server.onrender.com/api/user/' + params.id)
       .then(res => {
         setData(res.data);
       })
@@ -19,7 +19,7 @@ export const Review = () => {
 
   const postReview = () => {
     axios
-      .post(`http://localhost:4000/api/user/review/${params.id}`, {
+      .post(`https://startup-guide-server.onrender.com/api/user/review/${params.id}`, {
         ros: review
       }, {
         headers: {

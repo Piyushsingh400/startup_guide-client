@@ -25,7 +25,7 @@ export const Form = () => {
       return setError("Brief must be shorter than 2000 chars");
     }
     axios
-      .post('http://localhost:4000/api/user/newBusiness', {
+      .post('https://startup-guide-server.onrender.com/api/user/newBusiness', {
         "name": name,
         "brief": brief,
         "explaination": explain

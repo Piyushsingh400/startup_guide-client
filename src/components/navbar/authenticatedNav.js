@@ -9,7 +9,7 @@ export const AuthNavBar = () => {
 
   React.useEffect(() => {
     axios
-      .get("http://localhost:4000/api/user/info", {
+      .get("https://startup-guide-server.onrender.com/api/user/info", {
         headers: {
           "x-auth-token": localStorage.getItem("token"),
         },

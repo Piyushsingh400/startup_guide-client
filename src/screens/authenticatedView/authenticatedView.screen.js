@@ -11,7 +11,7 @@ export const AuthenticatedView = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/api/user/info", {
+      .get("https://startup-guide-server.onrender.com/api/user/info", {
         headers: {
           "x-auth-token": localStorage.getItem("token"),
         },
@@ -20,7 +20,7 @@ export const AuthenticatedView = () => {
         setData(res.data);
       });
 
-    axios.get("http://localhost:4000/api/user").then((res) => {
+    axios.get("https://startup-guide-server.onrender.com/api/user").then((res) => {
       setStartupsData(res.data.reverse());
     });
   }, []);

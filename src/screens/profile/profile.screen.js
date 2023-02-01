@@ -11,7 +11,7 @@ export const ProfileScreen = () => {
   React.useEffect(() => {
     const ids = jwtDecode(localStorage.getItem("token"));
     axios
-      .get("http://localhost:4000/api/user/userInfo/" + ids._id)
+      .get("https://startup-guide-server.onrender.com/api/user/userInfo/" + ids._id)
       .then((res) => {
         setData(res.data);
       });

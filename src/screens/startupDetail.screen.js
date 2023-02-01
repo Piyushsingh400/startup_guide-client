@@ -25,7 +25,7 @@ export const StartupDetail = () => {
     }
 
     axios
-      .get(`http://localhost:4000/api/user/${params.id}`, {
+      .get(`https://startup-guide-server.onrender.com/api/user/${params.id}`, {
         headers: {
           "x-auth-token": localStorage.getItem("token"),
         },
@@ -34,7 +34,7 @@ export const StartupDetail = () => {
         setData(res.data);
         setReviews(res.data.reviews.reverse());
         axios
-          .get(`http://localhost:4000/api/user/userInfo/${res.data.author}`)
+          .get(`https://startup-guide-server.onrender.com/api/user/userInfo/${res.data.author}`)
           .then((res2) => {
             setAuthData(res2.data[0]);
             setId(jwtDecode(localStorage.getItem("token")));

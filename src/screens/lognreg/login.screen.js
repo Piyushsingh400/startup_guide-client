@@ -13,7 +13,7 @@ export const Login = () => {
       return setError('Please fill in all the fields');
     }
 
-    axios.post("http://localhost:4000/api/auth", {
+    axios.post("https://startup-guide-server.onrender.com/api/auth", {
       email: email,
       password: password,
     })

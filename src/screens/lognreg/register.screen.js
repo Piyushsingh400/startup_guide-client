@@ -16,7 +16,7 @@ export const Register = () => {
     }
 
     axios
-      .post("http://localhost:4000/api/user", {
+      .post("https://startup-guide-server.onrender.com/api/user", {
         username: username,
         email: email,
         password: password,
