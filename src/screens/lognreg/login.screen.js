@@ -36,7 +36,7 @@ export const Login = () => {
               color: "#151449",
             }}
           >
-            <b>Startupeer</b>
+            <b>Startup Guide</b>
           </Link>
         </div>
       </nav>

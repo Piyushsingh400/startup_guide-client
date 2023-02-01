@@ -14,7 +14,7 @@ export const NavBar = () => {
               color: "#E5D9F2",
             }}
           >
-            <b>Startupeer</b>
+            <b>Startup Guide</b>
           </Link>
         </div>
         <div className="left">
